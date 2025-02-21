@@ -67,5 +67,3 @@ leftBtn.addEventListener('click', () => {
 rightBtn.addEventListener('click', () => {
   slider.scrollBy({ left: cardWidth, behavior: 'smooth' });
 });
-
-
