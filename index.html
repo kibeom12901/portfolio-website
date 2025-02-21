@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Brian Kim - Portfolio</title>
+  
+  <link
+    href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="css/styles.css" />
+
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+</head>
+<body>
+
+  <nav>
+    <div class="container nav-container">
+      <div class="logo"></div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+  
+  <header id="hero">
+    <div class="container hero-wrapper">
+      <div class="hero-text">
+        <h1>Hi there,</h1>
+        <h1>I'm <span class="orange-text">Brian Kim</span></h1>
+        <p class="typed-line">
+          I am <span id="typed"></span>
+        </p>
+        <a href="#" class="btn download-btn">Download CV</a>
+        <a href="#about" class="btn">About Me</a>
+      </div>
+
+
+    </div>
+  </header>
+  
+  <section id="about" class="section about-section">
+    <div class="container about-container">
+      <div class="about-image">
+        <img src="images/intro.png" alt="Brian Kim" />
+      </div>
+      <div class="about-text">
+        <h2>About Me</h2>
+        <p>
+          I’m a student at Tufts University pursuing a Bachelor of Engineering in Electrical 
+          and Electronics Engineering. My academic journey has provided me with a strong foundation 
+          in quantitative analysis, experimental research, and problem-solving. I’m eager to leverage 
+          my technical skills to create innovative solutions with a social impact.
+        </p>
+        <p>
+          Beyond engineering, my multicultural background has shaped the way I approach challenges and connect 
+          with others. Having lived in multiple countries—including Korea, Singapore, India, and the U.S.—I’ve
+          developed a global perspective, adaptability, and an appreciation for diverse ways of thinking. Navigating 
+          different cultures has taught me resilience, open-mindedness, and the importance of bridging ideas across 
+          disciplines and communities. Whether it's through technology or meaningful collaborations, I strive to bring 
+          together technical expertise and cultural awareness to drive impactful solutions.
+        </p>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Education Section -->
+  <section id="education" class="section">
+    <div class="container">
+      <h2>Education</h2>
+      <div class="education-cards">
+        <div class="education-row">
+          <!-- UWC South East Asia -->
+          <div class="card">
+            <div class="card-heading">
+              <img src="images/uwc_sea.png" alt="UWC South East Asia" class="card-icon" />
+              <h3>UWC South East Asia</h3>
+            </div>
+            <p class="date"><em>Aug 2019 - Aug 2022</em></p>
+            <p>
+              <strong>Activities & Societies:</strong> Engineering Club (co-chair), 
+              Physics Society, Magic Bus, Storpill (co-chair), Initiative for Peace, 
+              Asian Women's Welfare Association, Model United Nations
+            </p>
+          </div>
+
+          <!-- Tufts University -->
+          <div class="card">
+            <div class="card-heading">
+              <img src="images/tufts_logo.png" alt="Tufts University" class="card-icon" />
+              <h3>Tufts University</h3>
+            </div>
+            <p class="date"><em>2022 - 2028</em></p>
+            <p>Bachelor of Engineering - BE, Electrical and Electronics Engineering</p>
+            <p>
+              <strong>Activities & Societies:</strong> Electrical Engineering Societies, 
+              Tufts Solar Vehicle, Theta Chi Fraternity, Tufts Club Baseball
+            </p>
+          </div>
+
+        </div> <!-- End education-row -->
+      </div> <!-- End education-cards -->
+    </div>
+  </section>
+
+  <!-- Experience Section -->
+  <section id="experience" class="section">
+    <div class="container">
+      <h2>Experience</h2>
+  
+      <div class="experience-cards">
+        <!-- Row 1: KETI, Stochastic -->
+        <div class="experience-row">
+          <!-- KETI -->
+          <div class="card">
+            <div class="card-heading">
+              <img
+                src="images/keti.png"
+                alt="KETI Internship"
+                class="card-icon"
+              />
+              <h3>System Engineer Intern, KETI</h3>
+            </div>
+            <p class="date"><em>Aug 2024 - Oct 2024 (3 mos) | South Korea</em></p>
+            <ul>
+              <li>Optimized the ST-P3 autonomous driving framework for efficiency.</li>
+              <li>Resolved Linux system discrepancies & customized Python scripts.</li>
+              <li>Managed simulations & streamlined API configurations.</li>
+            </ul>
+            <p class="project-link">
+              <a
+                href="https://github.com/kibeom12901/Process-of-Running-ST-P3-"
+                target="_blank"
+                >View GitHub Project</a
+              >
+            </p>
+          </div>
+  
+          <!-- Stochastic -->
+          <div class="card">
+            <div class="card-heading">
+              <img
+                src="images/stochastic.png"
+                alt="Stochastic Internship"
+                class="card-icon"
+              />
+              <h3>Software Engineer Intern, Stochastic</h3>
+            </div>
+            <p class="date"><em>May 2024 - Jul 2024 (3 mos) | Remote</em></p>
+            <ul>
+              <li>Developed full‑stack web and API features using React.</li>
+              <li>Maintained robust API endpoints & clean web interactions.</li>
+              <li>Contributed to a scalable tech stack for enhanced reliability.</li>
+            </ul>
+          </div>
+        </div>
+  
+        <!-- Row 2: SK hynix, Tufts Solar Vehicle -->
+        <div class="experience-row">
+          <!-- SK hynix -->
+          <div class="card">
+            <div class="card-heading">
+              <img
+                src="images/sk_hynix.png"
+                alt="SK hynix Internship"
+                class="card-icon"
+              />
+              <h3>Summer Intern, SK hynix</h3>
+            </div>
+            <p class="date"><em>Sep 2021 (1 mo) | Singapore</em></p>
+            <ul>
+              <li>Completed a report on new semiconductors through data & chart analysis.</li>
+              <li>Researched market comparisons for existing models.</li>
+              <li>Learned SSD & DRAM functionalities in-depth.</li>
+            </ul>
+          </div>
+  
+          <!-- Tufts Solar Vehicle -->
+          <div class="card">
+            <div class="card-heading">
+              <img
+                src="images/solar_vehicle.png"
+                alt="Tufts Solar Vehicle Project"
+                class="card-icon"
+              />
+              <h3>Member, Tufts Solar Vehicle Project</h3>
+            </div>
+            <p class="date"><em>Sep 2023 - May 2024 (9 mos) | Medford, MA</em></p>
+            <ul>
+              <li>Designed electrical systems powering solar vehicles.</li>
+              <li>Enhanced renewable energy harnessing & overall performance.</li>
+            </ul>
+          </div>
+        </div>
+  
+        <!-- Row 3: Military (alone in row) -->
+        <div class="experience-row">
+          <!-- Republic of Korea Army -->
+          <div class="card" style="margin: 0 auto;">
+            <div class="card-heading">
+              <img
+                src="images/roka.png"
+                alt="Republic of Korea Army"
+                class="card-icon"
+              />
+              <h3>Republic of Korea Army — Military Service</h3>
+            </div>
+            <p class="date"><em>Oct 2024 - Present (5 mos)</em></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>  
+<!-- Projects Section -->
+<section id="projects" class="section projects-section">
+  <div class="container">
+    <h2>My Projects</h2>
+    <p class="project-subtitle">Drag or use the arrows to navigate through projects</p>
+
+    <div class="slider-container">
+      <!-- Scrollable Projects Wrapper -->
+      <div class="projects-wrapper">
+        <div class="projects-inner">
+
+          <!-- ST-P3 Autonomous Driving -->
+          <div class="project-card">
+            <div class="card-image">
+              <img src="images/ST_P3.png" alt="ST-P3 Autonomous Driving" />
+              <div class="card-title">ST-P3 Framework</div>
+            </div>
+            <div class="card-overlay">
+              <h3>ST-P3 Autonomous Driving Framework</h3>
+              <p class="date">Aug 2024 - Oct 2024</p>
+              <p>
+                Developed an end-to-end vision-based autonomous driving model using ST-P3. 
+                Trained Perception, Prediction, and Planning modules to handle multi-camera inputs, 
+                align features in 3D space, and generate safer trajectories. Achieved improved IoU 
+                for vehicles, lanes, and drivable areas while reducing collision probabilities over time.
+              </p>
+              <a
+                href="https://github.com/kibeom12901/Process-of-Running-ST-P3-"
+                class="btn"
+                target="_blank"
+                >View GitHub Project</a
+              >
+            </div>
+          </div>
+
+          <!-- Project Card 2: Pulse Oximeter Sensor -->
+          <div class="project-card">
+            <div class="card-image">
+              <img src="images/pulse_oximeter.png" alt="Pulse Oximeter Sensor" />
+              <div class="card-title">Pulse Oximeter</div>
+            </div>
+            <div class="card-overlay">
+              <h3>Pulse Oximeter Sensor Stabilization</h3>
+              <p class="date">Jan 2024 - Apr 2024</p>
+              <p>
+                Built a pulse oximeter circuit with IR LED and photodetector, integrating feedback control for stable 
+                LED intensity. Achieved clear signals (~1 V peak-to-peak) for reliable blood oxygen monitoring.
+              </p>
+              <a href="https://docs.google.com/document/d/1qRke4GtqoBBbuFYmdsR0UpgSl8epvsTqC5AoIOMljM0/edit?tab=t.0" class="btn">View Details</a>
+            </div>
+          </div>
+
+          <!-- Project Card 3: Soil Moisture Sensor -->
+          <div class="project-card">
+            <div class="card-image">
+              <img src="images/soil.png" alt="Soil Moisture Sensor" />
+              <div class="card-title">Soil Moisture Sensor</div>
+            </div>
+            <div class="card-overlay">
+              <h3>Soil Moisture Sensor with Auditory Feedback</h3>
+              <p class="date">Jan 2024 - Apr 2024</p>
+              <p>
+                Created a TL555-based sensor with an STM32 microcontroller for real-time soil moisture monitoring. 
+                Integrated an audio alert for visually impaired users, aiding agriculture and environmental tracking.
+              </p>
+              <a
+                href="https://github.com/kibeom129/Soil-Moisture-Sensor-with-Auditory-Feedback"
+                class="btn"
+                target="_blank"
+                >View GitHub Project</a
+              >
+            </div>
+          </div>
+
+          <!-- Project Card 4: FPGA Snake Game -->
+          <div class="project-card">
+            <div class="card-image">
+              <img src="images/snake.png" alt="FPGA Snake Game" />
+              <div class="card-title">FPGA Snake Game</div>
+            </div>
+            <div class="card-overlay">
+              <h3>FPGA Snake Game</h3>
+              <p class="date">Sep 2023 - Dec 2023</p>
+              <p>
+                Implemented a classic Snake game on an FPGA board, integrating VGA output and NES controller input. 
+                Demonstrated real-time collision detection, scoring logic, and overall digital design proficiency.
+              </p>
+              <a
+                href="https://github.com/kibeom129/FPGA-Snake-Game"
+                class="btn"
+                target="_blank"
+                >View GitHub Project</a
+              >
+            </div>
+          </div>
+
+        </div><!-- .projects-inner -->
+      </div><!-- .projects-wrapper -->
+
+      <!-- Navigation Arrows -->
+      <button class="slider-btn left-btn">&#10094;</button>
+      <button class="slider-btn right-btn">&#10095;</button>
+    </div><!-- .slider-container -->
+  </div><!-- .container -->
+</section>
+
