@@ -19,7 +19,9 @@
 
   <nav>
     <div class="container nav-container">
-      <div class="logo"></div>
+      <div class="logo">
+        <a href="#hero">Brian Kim</a>
+      </div>
       <ul class="nav-links">
         <li><a href="#about">About</a></li>
         <li><a href="#education">Education</a></li>
@@ -38,11 +40,10 @@
         <p class="typed-line">
           I am <span id="typed"></span>
         </p>
+        <!-- Point this to your PDF once you add it, e.g. files/Brian_Kim_CV.pdf -->
         <a href="#" class="btn download-btn">Download CV</a>
         <a href="#about" class="btn">About Me</a>
       </div>
-
-
     </div>
   </header>
   
@@ -128,7 +129,7 @@
               />
               <h3>System Engineer Intern, KETI</h3>
             </div>
-            <p class="date"><em>Aug 2024 - Oct 2024 (3 mos) | South Korea</em></p>
+            <p class="date"><em>Aug 2024 - Oct 2024 · South Korea</em></p>
             <ul>
               <li>Optimized the ST-P3 autonomous driving framework for efficiency.</li>
               <li>Resolved Linux system discrepancies & customized Python scripts.</li>
@@ -153,9 +154,9 @@
               />
               <h3>Software Engineer Intern, Stochastic</h3>
             </div>
-            <p class="date"><em>May 2024 - Jul 2024 (3 mos) | Remote</em></p>
+            <p class="date"><em>May 2024 - Jul 2024 · Remote</em></p>
             <ul>
-              <li>Developed full‑stack web and API features using React.</li>
+              <li>Developed full-stack web and API features using React.</li>
               <li>Maintained robust API endpoints & clean web interactions.</li>
               <li>Contributed to a scalable tech stack for enhanced reliability.</li>
             </ul>
@@ -174,7 +175,7 @@
               />
               <h3>Summer Intern, SK hynix</h3>
             </div>
-            <p class="date"><em>Sep 2021 (1 mo) | Singapore</em></p>
+            <p class="date"><em>Sep 2021 · Singapore</em></p>
             <ul>
               <li>Completed a report on new semiconductors through data & chart analysis.</li>
               <li>Researched market comparisons for existing models.</li>
@@ -192,7 +193,7 @@
               />
               <h3>Member, Tufts Solar Vehicle Project</h3>
             </div>
-            <p class="date"><em>Sep 2023 - May 2024 (9 mos) | Medford, MA</em></p>
+            <p class="date"><em>Sep 2023 - May 2024 · Medford, MA</em></p>
             <ul>
               <li>Designed electrical systems powering solar vehicles.</li>
               <li>Enhanced renewable energy harnessing & overall performance.</li>
@@ -203,7 +204,7 @@
         <!-- Row 3: Military (alone in row) -->
         <div class="experience-row">
           <!-- Republic of Korea Army -->
-          <div class="card" style="margin: 0 auto;">
+          <div class="card single-card">
             <div class="card-heading">
               <img
                 src="images/roka.png"
@@ -212,120 +213,143 @@
               />
               <h3>Republic of Korea Army — Military Service</h3>
             </div>
-            <p class="date"><em>Oct 2024 - Present (5 mos)</em></p>
+            <p class="date"><em>Oct 2024 - Present · South Korea</em></p>
           </div>
         </div>
       </div>
     </div>
   </section>  
-<!-- Projects Section -->
-<section id="projects" class="section projects-section">
-  <div class="container">
-    <h2>My Projects</h2>
-    <p class="project-subtitle"> My Work & Contributions</p>
 
-    <div class="slider-container">
-      <!-- Scrollable Projects Wrapper -->
-      <div class="projects-wrapper">
-        <div class="projects-inner">
+  <!-- Projects Section -->
+  <section id="projects" class="section projects-section">
+    <div class="container">
+      <h2>My Projects</h2>
+      <p class="project-subtitle">My Work & Contributions</p>
 
-          <!-- ST-P3 Autonomous Driving -->
-          <div class="project-card">
-            <div class="card-image">
-              <img src="images/ST_P3.png" alt="ST-P3 Autonomous Driving" />
-              <div class="card-title">ST-P3 Framework</div>
+      <div class="slider-container">
+        <!-- Scrollable Projects Wrapper -->
+        <div class="projects-wrapper">
+          <div class="projects-inner">
+
+            <!-- ST-P3 Autonomous Driving -->
+            <div class="project-card">
+              <div class="card-image">
+                <img src="images/ST_P3.png" alt="ST-P3 Autonomous Driving" />
+                <div class="card-title">ST-P3 Framework</div>
+              </div>
+              <div class="card-overlay">
+                <h3>ST-P3 Autonomous Driving Framework</h3>
+                <p class="date">Aug 2024 - Oct 2024</p>
+                <p>
+                  Developed an end-to-end vision-based autonomous driving model using ST-P3. 
+                  Trained Perception, Prediction, and Planning modules to handle multi-camera inputs, 
+                  align features in 3D space, and generate safer trajectories. Achieved improved IoU 
+                  for vehicles, lanes, and drivable areas while reducing collision probabilities over time.
+                </p>
+                <a
+                  href="https://github.com/kibeom12901/Process-of-Running-ST-P3-"
+                  class="btn"
+                  target="_blank"
+                  >View GitHub Project</a
+                >
+              </div>
             </div>
-            <div class="card-overlay">
-              <h3>ST-P3 Autonomous Driving Framework</h3>
-              <p class="date">Aug 2024 - Oct 2024</p>
-              <p>
-                Developed an end-to-end vision-based autonomous driving model using ST-P3. 
-                Trained Perception, Prediction, and Planning modules to handle multi-camera inputs, 
-                align features in 3D space, and generate safer trajectories. Achieved improved IoU 
-                for vehicles, lanes, and drivable areas while reducing collision probabilities over time.
-              </p>
-              <a
-                href="https://github.com/kibeom12901/Process-of-Running-ST-P3-"
-                class="btn"
-                target="_blank"
-                >View GitHub Project</a
-              >
-            </div>
-          </div>
 
-          <!-- Project Card 2: Pulse Oximeter Sensor -->
-          <div class="project-card">
-            <div class="card-image">
-              <img src="images/pulse_oximeter.png" alt="Pulse Oximeter Sensor" />
-              <div class="card-title">Pulse Oximeter</div>
+            <!-- VS1003B MP3 Player (NEW) -->
+            <div class="project-card">
+              <div class="card-image">
+                <img src="images/vs1003b.png" alt="VS1003B MP3 Player" />
+                <div class="card-title">VS1003B MP3 Player</div>
+              </div>
+              <div class="card-overlay">
+                <h3>STM32 + VS1003B MP3 Player</h3>
+                <p class="date">2025</p>
+                <p>
+                  Built a bare-metal STM32F4 MP3 player using the VS1003B audio codec and SPI-based microSD storage. 
+                  Implemented double-buffered streaming, ID3 tag parsing, playlist scanning, and button-based 
+                  controls (next/previous/shuffle) to create a robust embedded audio system.
+                </p>
+                <a
+                  href="https://github.com/kibeom12901/VS1003B_MP3_Player"
+                  class="btn"
+                  target="_blank"
+                  >View GitHub Project</a
+                >
+              </div>
             </div>
-            <div class="card-overlay">
-              <h3>Pulse Oximeter Sensor Stabilization</h3>
-              <p class="date">Jan 2024 - Apr 2024</p>
-              <p>
-                Built a pulse oximeter circuit with IR LED and photodetector, integrating feedback control for stable 
-                LED intensity. Achieved clear signals (~1 V peak-to-peak) for reliable blood oxygen monitoring.
-              </p>
-              <a href="https://docs.google.com/document/d/1qRke4GtqoBBbuFYmdsR0UpgSl8epvsTqC5AoIOMljM0/edit?tab=t.0" class="btn">View Details</a>
+
+            <!-- Pulse Oximeter Sensor -->
+            <div class="project-card">
+              <div class="card-image">
+                <img src="images/pulse_oximeter.png" alt="Pulse Oximeter Sensor" />
+                <div class="card-title">Pulse Oximeter</div>
+              </div>
+              <div class="card-overlay">
+                <h3>Pulse Oximeter Sensor Stabilization</h3>
+                <p class="date">Jan 2024 - Apr 2024</p>
+                <p>
+                  Built a pulse oximeter circuit with IR LED and photodetector, integrating feedback control for stable 
+                  LED intensity. Achieved clear signals (~1 V peak-to-peak) for reliable blood oxygen monitoring.
+                </p>
+                <a href="https://docs.google.com/document/d/1qRke4GtqoBBbuFYmdsR0UpgSl8epvsTqC5AoIOMljM0/edit?tab=t.0" class="btn" target="_blank">View Details</a>
+              </div>
             </div>
-          </div>
 
-          <!-- Project Card 3: Soil Moisture Sensor -->
-          <div class="project-card">
-            <div class="card-image">
-              <img src="images/soil.png" alt="Soil Moisture Sensor" />
-              <div class="card-title">Soil Moisture Sensor</div>
+            <!-- Soil Moisture Sensor -->
+            <div class="project-card">
+              <div class="card-image">
+                <img src="images/soil.png" alt="Soil Moisture Sensor" />
+                <div class="card-title">Soil Moisture Sensor</div>
+              </div>
+              <div class="card-overlay">
+                <h3>Soil Moisture Sensor with Auditory Feedback</h3>
+                <p class="date">Jan 2024 - Apr 2024</p>
+                <p>
+                  Created a TL555-based sensor with an STM32 microcontroller for real-time soil moisture monitoring. 
+                  Integrated an audio alert for visually impaired users, aiding agriculture and environmental tracking.
+                </p>
+                <a
+                  href="https://github.com/kibeom129/Soil-Moisture-Sensor-with-Auditory-Feedback"
+                  class="btn"
+                  target="_blank"
+                  >View GitHub Project</a
+                >
+              </div>
             </div>
-            <div class="card-overlay">
-              <h3>Soil Moisture Sensor with Auditory Feedback</h3>
-              <p class="date">Jan 2024 - Apr 2024</p>
-              <p>
-                Created a TL555-based sensor with an STM32 microcontroller for real-time soil moisture monitoring. 
-                Integrated an audio alert for visually impaired users, aiding agriculture and environmental tracking.
-              </p>
-              <a
-                href="https://github.com/kibeom129/Soil-Moisture-Sensor-with-Auditory-Feedback"
-                class="btn"
-                target="_blank"
-                >View GitHub Project</a
-              >
+
+            <!-- FPGA Snake Game -->
+            <div class="project-card">
+              <div class="card-image">
+                <img src="images/snake.png" alt="FPGA Snake Game" />
+                <div class="card-title">FPGA Snake Game</div>
+              </div>
+              <div class="card-overlay">
+                <h3>FPGA Snake Game</h3>
+                <p class="date">Sep 2023 - Dec 2023</p>
+                <p>
+                  Implemented a classic Snake game on an FPGA board, integrating VGA output and NES controller input. 
+                  Demonstrated real-time collision detection, scoring logic, and overall digital design proficiency.
+                </p>
+                <a
+                  href="https://github.com/kibeom129/FPGA-Snake-Game"
+                  class="btn"
+                  target="_blank"
+                  >View GitHub Project</a
+                >
+              </div>
             </div>
-          </div>
 
-          <!-- Project Card 4: FPGA Snake Game -->
-          <div class="project-card">
-            <div class="card-image">
-              <img src="images/snake.png" alt="FPGA Snake Game" />
-              <div class="card-title">FPGA Snake Game</div>
-            </div>
-            <div class="card-overlay">
-              <h3>FPGA Snake Game</h3>
-              <p class="date">Sep 2023 - Dec 2023</p>
-              <p>
-                Implemented a classic Snake game on an FPGA board, integrating VGA output and NES controller input. 
-                Demonstrated real-time collision detection, scoring logic, and overall digital design proficiency.
-              </p>
-              <a
-                href="https://github.com/kibeom129/FPGA-Snake-Game"
-                class="btn"
-                target="_blank"
-                >View GitHub Project</a
-              >
-            </div>
-          </div>
+          </div><!-- .projects-inner -->
+        </div><!-- .projects-wrapper -->
 
-        </div><!-- .projects-inner -->
-      </div><!-- .projects-wrapper -->
-
-      <!-- Navigation Arrows -->
-      <button class="slider-btn left-btn">&#10094;</button>
-      <button class="slider-btn right-btn">&#10095;</button>
-    </div><!-- .slider-container -->
-  </div><!-- .container -->
-</section>
+        <!-- Navigation Arrows -->
+        <button class="slider-btn left-btn">&#10094;</button>
+        <button class="slider-btn right-btn">&#10095;</button>
+      </div><!-- .slider-container -->
+    </div><!-- .container -->
+  </section>
 
 
-  
   <!-- Contact Section -->
   <section id="contact" class="section contact-section">
     <div class="container">
