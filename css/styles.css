@@ -100,8 +100,16 @@ nav {
   color: orange;
 }
 
+.hero-subtitle {
+  font-size: 1rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #bbb;
+  margin-bottom: 0.5rem;
+}
+
 #typed {
-  color: brown;
+  color: #ffb86c;
 }
 
 .typed-line {
@@ -142,6 +150,15 @@ nav {
   font-size: 2rem;
   margin-bottom: 2rem;
   font-weight: 700;
+}
+
+/* Make anchor jumps nicer with fixed nav */
+#about,
+#education,
+#experience,
+#projects,
+#contact {
+  scroll-margin-top: 80px;
 }
 
 /* About Section */
@@ -373,7 +390,7 @@ nav {
   font-weight: 600;
 }
 
-/* Overlay on hover */
+/* Overlay on hover (desktop) */
 .card-overlay {
   position: absolute;
   top: 0;
@@ -409,6 +426,15 @@ nav {
   line-height: 1.4;
   color: #ccc;
   margin-bottom: 0.5rem;
+}
+
+/* Tech stack label */
+.tech-stack {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #9f9fff;
+  margin-bottom: 0.4rem;
 }
 
 /* Slider arrows */
@@ -533,7 +559,7 @@ footer {
   /* Make nav fixed and compact */
   nav {
     position: fixed;
-    background: rgba(0, 0, 0, 0.85);
+    background: rgba(0, 0, 0, 0.9);
   }
 
   body {
@@ -547,6 +573,7 @@ footer {
   .nav-links {
     flex-wrap: wrap;
     justify-content: flex-end;
+    gap: 0.25rem;
   }
 
   .nav-links li {
@@ -554,7 +581,7 @@ footer {
   }
 
   .nav-links a {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
   }
 
   .hero-text h1 {
@@ -610,6 +637,35 @@ footer {
   .project-card {
     flex: 0 0 90%;
     max-width: 90%;
+  }
+
+  .card-overlay p {
+    font-size: 0.85rem;
+  }
+}
+
+/* Make project overlays always visible on touch devices (no hover) */
+@media (hover: none) and (pointer: coarse) {
+  .project-card {
+    padding-bottom: 1rem;
+  }
+
+  .card-overlay {
+    position: static;
+    opacity: 1;
+    visibility: visible;
+    background: transparent;
+    padding: 0;
+    margin-top: 0.5rem;
+  }
+
+  .card-image {
+    margin-bottom: 0.5rem;
+  }
+
+  .card-overlay h3 {
+    font-size: 1rem;
+    margin-bottom: 0.3rem;
   }
 
   .card-overlay p {
