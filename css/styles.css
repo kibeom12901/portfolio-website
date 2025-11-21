@@ -3,9 +3,11 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 html {
   scroll-behavior: smooth;
 }
+
 body {
   font-family: 'Montserrat', sans-serif;
   background-color: #000; 
@@ -35,6 +37,7 @@ nav {
   align-items: center;
   padding: 1rem 0;
 }
+
 .logo a {
   font-size: 1.4rem;
   font-weight: 700;
@@ -42,19 +45,23 @@ nav {
   text-decoration: none;
   text-transform: uppercase;
 }
+
 .nav-links {
   list-style: none;
   display: flex;
 }
+
 .nav-links li {
   margin-left: 1.5rem;
 }
+
 .nav-links a {
   color: #fff;
   text-decoration: none;
   font-weight: 600;
   transition: color 0.3s;
 }
+
 .nav-links a:hover {
   color: #888;
 }
@@ -62,10 +69,9 @@ nav {
 /* Hero Section */
 #hero {
   position: relative;
-  height: 100vh;
+  min-height: 100vh;
   background: url("../images/footer-bg-md.jpg") no-repeat center center;
   background-size: cover;
-
   display: flex;
   align-items: center;
 }
@@ -97,13 +103,16 @@ nav {
 #typed {
   color: brown;
 }
+
 .typed-line {
   font-size: 2rem; 
   margin-bottom: 2rem;
   color: #ccc;
 }
 
+/* Buttons */
 .btn {
+  display: inline-block;
   background: #915EFF;
   padding: 0.8rem 2rem;
   border-radius: 50px;
@@ -111,199 +120,166 @@ nav {
   text-decoration: none;
   font-weight: 600;
   transition: background 0.3s, transform 0.3s;
-  margin-top: 2rem;  
+  margin-top: 1.2rem;
 }
+
 .btn:hover {
   background: #7b4ce0;
   transform: translateY(-3px);
 }
 
+.download-btn {
+  margin-right: 1rem; 
+}
+
+/* General Sections */
 .section {
   padding: 4rem 0;
 }
 
-.about-section {
-  background: #111;
-}
-.about-container {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 2rem;
-}
-.about-image {
-  flex: 1 1 300px;
-}
-.about-image img {
-  width: 100%;
-  border-radius: 10px;
-}
-.about-text {
-  flex: 2 1 500px;
-}
-.about-text h2 {
-  font-size: 2.5rem;
-  margin-bottom: 1rem;
-  font-weight: 700;
-}
-.about-text p {
-  font-size: 1rem;
-  margin-bottom: 1rem;
-  line-height: 1.8;
-  color: #ccc;
-}
-.about-text a {
-  color: #915EFF;
-  text-decoration: none;
-}
-
-/* Experience Section */
 .section h2 {
   text-align: center;
   font-size: 2rem;
   margin-bottom: 2rem;
   font-weight: 700;
 }
+
+/* About Section */
+.about-section {
+  background: #111;
+}
+
+.about-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 2rem;
+}
+
+.about-image {
+  flex: 1 1 300px;
+}
+
+.about-image img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.about-text {
+  flex: 2 1 500px;
+}
+
+.about-text h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+.about-text p {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  line-height: 1.8;
+  color: #ccc;
+}
+
+.about-text a {
+  color: #915EFF;
+  text-decoration: none;
+}
+
+/* Experience Section */
 #experience {
   background: #000;
 }
+
 .experience-cards {
   margin-top: 2rem;
 }
+
 .experience-row {
   display: flex;
+  flex-wrap: wrap;
   gap: 2rem;
   margin-bottom: 3rem;
 }
+
 .card {
-  flex: 1;
+  flex: 1 1 280px;
   background: #111;
   border-radius: 8px;
   box-shadow: 0 4px 20px rgba(0,0,0,0.5);
   transition: transform 0.3s ease;
   padding: 1.5rem;
 }
+
 .card:hover {
   transform: translateY(-5px);
 }
+
 .card-heading {
   display: flex;
   align-items: center;
   gap: 1rem;
   margin-bottom: 0.5rem;
 }
+
 .card-icon {
   width: 48px;
   height: 48px;
   border-radius: 50%;
   object-fit: cover;
 }
+
 .date {
   font-size: 0.9rem;
   color: #999;
   margin-bottom: 1rem;
 }
+
 .card ul {
   list-style: disc inside;
   margin-bottom: 1rem;
 }
+
 .card ul li {
   font-size: 0.9rem;
   margin-bottom: 0.5rem;
   color: #ccc;
 }
+
+.single-card {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
 .project-link a {
   color: #915EFF;
   text-decoration: none;
   font-weight: 600;
   transition: color 0.3s ease;
 }
+
 .project-link a:hover {
   color: #7b4ce0;
-}
-
-/* Projects Section */
-#projects {
-  background: #111;
-}
-#projects h2 {
-  text-align: center;
-}
-#projects p {
-  text-align: center;
-  color: #ccc;
-}
-
-/* Contact Section */
-.contact-section {
-  background: #000;
-  text-align: center;
-}
-.contact-section h2 {
-  font-size: 2rem;
-  margin-bottom: 0.5rem;
-  font-weight: 700;
-}
-.contact-section h3 {
-  font-size: 1.3rem;
-  color: #999;
-  margin-bottom: 2rem;
-}
-.contact-wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 2rem;
-  margin-top: 1rem;
-}
-.contact-item {
-  display: flex;
-  align-items: center;
-  background: #111;
-  padding: 0.8rem 1.5rem;
-  border-radius: 50px;
-  gap: 0.5rem;
-}
-.contact-item a {
-  color: #fff;
-  text-decoration: none;
-  font-weight: 600;
-  transition: color 0.3s ease;
-}
-.contact-item a:hover {
-  color: #915EFF;
-}
-.icon {
-  width: 24px;
-  height: 24px;
-  object-fit: contain;
-}
-
-/* Footer */
-footer {
-  background: #000;
-  text-align: center;
-  padding: 1.5rem 0;
-  font-size: 0.9rem;
-  color: #999;
 }
 
 /* Education Section */
 #education {
   background: #000;
 }
+
 .education-cards {
   margin-top: 2rem;
 }
+
 .education-row {
   display: flex;
+  flex-wrap: wrap;
   gap: 2rem;
   margin-bottom: 3rem;
 }
 
-.download-btn {
-  margin-right: 1rem; 
-}
+/* Projects Section */
 .projects-section {
   background: #000;
   color: #fff;
@@ -329,7 +305,7 @@ footer {
   overflow: hidden;
 }
 
-/* Hide scrollbar */
+/* Scrollable wrapper */
 .projects-wrapper {
   overflow-x: auto;
   overflow-y: hidden;
@@ -338,9 +314,11 @@ footer {
   -webkit-overflow-scrolling: touch;
   scrollbar-width: none; 
 }
+
 .projects-wrapper::-webkit-scrollbar {
   display: none; 
 }
+
 .projects-wrapper.active {
   cursor: grabbing;
 }
@@ -395,6 +373,7 @@ footer {
   font-weight: 600;
 }
 
+/* Overlay on hover */
 .card-overlay {
   position: absolute;
   top: 0;
@@ -424,6 +403,7 @@ footer {
   font-size: 1.1rem;
   margin-bottom: 0.25rem;
 }
+
 .card-overlay p {
   font-size: 0.9rem;
   line-height: 1.4;
@@ -431,22 +411,7 @@ footer {
   margin-bottom: 0.5rem;
 }
 
-/* Button Style */
-.btn {
-  display: inline-block;
-  background: #915EFF;
-  color: #fff;
-  text-decoration: none;
-  padding: 0.4rem 0.8rem;
-  border-radius: 20px;
-  font-weight: 600;
-  transition: background 0.3s ease;
-}
-.btn:hover {
-  background: #7b4ce0;
-}
-
-/* Navigation Arrows */
+/* Slider arrows */
 .slider-btn {
   position: absolute;
   top: 50%;
@@ -461,19 +426,193 @@ footer {
   border-radius: 50%;
   transition: background 0.3s ease;
 }
+
 .slider-btn:hover {
   background: rgba(0,0,0,0.8);
 }
+
 .left-btn {
   left: 10px;
 }
+
 .right-btn {
   right: 10px;
 }
 
-@media (max-width: 768px) {
+/* Contact Section */
+.contact-section {
+  background: #000;
+  text-align: center;
+}
+
+.contact-section h2 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+}
+
+.contact-section h3 {
+  font-size: 1.3rem;
+  color: #999;
+  margin-bottom: 2rem;
+}
+
+.contact-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 1rem;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  background: #111;
+  padding: 0.8rem 1.5rem;
+  border-radius: 50px;
+  gap: 0.5rem;
+}
+
+.contact-item a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.contact-item a:hover {
+  color: #915EFF;
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+}
+
+/* Footer */
+footer {
+  background: #000;
+  text-align: center;
+  padding: 1.5rem 0;
+  font-size: 0.9rem;
+  color: #999;
+}
+
+/* ====== RESPONSIVE STYLES ====== */
+
+/* Tablets / small laptops */
+@media (max-width: 992px) {
+  .hero-wrapper {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .hero-text {
+    margin-right: 0;
+  }
+
+  .hero-text h1 {
+    font-size: 2.7rem;
+  }
+
+  .typed-line {
+    font-size: 1.5rem;
+  }
+
   .project-card {
-    flex: 0 0 80%;
-    max-width: 80%;
+    flex: 0 0 60%;
+    max-width: 60%;
+  }
+}
+
+/* Phones */
+@media (max-width: 768px) {
+  /* Make nav fixed and compact */
+  nav {
+    position: fixed;
+    background: rgba(0, 0, 0, 0.85);
+  }
+
+  body {
+    padding-top: 72px; /* space for fixed nav */
+  }
+
+  .nav-container {
+    padding: 0.75rem 0;
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+    justify-content: flex-end;
+  }
+
+  .nav-links li {
+    margin-left: 0.75rem;
+  }
+
+  .nav-links a {
+    font-size: 0.9rem;
+  }
+
+  .hero-text h1 {
+    font-size: 2.3rem;
+  }
+
+  .typed-line {
+    font-size: 1.3rem;
+  }
+
+  .about-container,
+  .experience-row,
+  .education-row,
+  .contact-wrapper {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .about-text,
+  .about-image {
+    text-align: left;
+  }
+
+  .single-card {
+    max-width: 100%;
+  }
+
+  .project-card {
+    flex: 0 0 85%;
+    max-width: 85%;
+  }
+
+  .slider-btn {
+    font-size: 1.6rem;
+  }
+}
+
+/* Very small phones */
+@media (max-width: 480px) {
+  .hero-text h1 {
+    font-size: 2rem;
+  }
+
+  .typed-line {
+    font-size: 1.1rem;
+  }
+
+  .btn {
+    padding: 0.7rem 1.4rem;
+    font-size: 0.9rem;
+  }
+
+  .project-card {
+    flex: 0 0 90%;
+    max-width: 90%;
+  }
+
+  .card-overlay p {
+    font-size: 0.85rem;
   }
 }
